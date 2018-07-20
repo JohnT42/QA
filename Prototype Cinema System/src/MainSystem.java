@@ -1,6 +1,6 @@
-public class MainTicketCalculation {
+public class MainSystem {
 	
-	public static void getreturn() {
+	public static void getcalculations() {
 		      Ticket standard = new Ticket();
 		      standard.setName("Standard");
 		      standard.setPrice(8);
@@ -34,7 +34,7 @@ public class MainTicketCalculation {
 			// This method returns the total cost of tickets with discount included within the final price
 			
 			System.out.println("The total cost of "+totaltkt+" tickets for "+FilmSelect.filmlist[FilmSelect.filmnumber-1].substring(3, FilmSelect.filmlist[FilmSelect.filmnumber-1].length())+" is £"+totalplusdiscount+".");
-			//This displays the total cost with discount as well as the name of the fim for which they are buying tickets for.
+			//This displays the total cost with discount as well as the name of the film for which they are buying tickets for.
 	}
 
 	public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class MainTicketCalculation {
 		FilmSelect.getFilm();
 		DayandTime.getdayandtime();
 		Discount.discountoffer();
-		getreturn();
+		getcalculations();
 	}
 }
 
